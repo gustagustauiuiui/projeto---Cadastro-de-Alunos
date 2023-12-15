@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SIGAA melhor</title>
+</head>
+<body>
+
+    <div class="geral"> 
+        <div class="pesquisa">
+            
+            <h1>Cadastrar Materia: </h1>
+            <div class="infos">
+                <label for="nomePesquisa">Materia: </label>
+                <input type="text" name="nomeMateria" id="nomeMateria">
+            </div>
+            
+            <button onclick="cadastrarMateria()">Cadastrar Materia</button>
+        </div>
+
+        <div class="cadastro">
+            <h1>Cadastro</h1>
+            <div class="infos">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div class="infos">
+                <label for="nota1">Nota 1:</label>
+                <input type="number" name="nota1" id="nota1" max="10" min="0">
+            </div>
+            <div class="infos">
+                <label for="nota2">Nota 2:</label>
+                <input type="number" name="nota2" id="nota2" max="10" min="0">
+            </div>
+            <div class="infos">
+                <label for="materia">Materia: </label>
+                <select id="optMateria"></select>
+            </div>
+        
+        <button onclick="cadastrar()">Cadastrar</button>
+        </div>
+    </div>
+
+    <div class="resultado">
+        <select id="materias"></select>
+        <button class="pesquisar" onclick="pesquisar()">Pesquisar</button>
+
+        <table id="tabela" border="2px solid black">
+            <tr>
+                <th>Aluno: </th>
+                <th>Nota 1:</th>
+                <th>Nota 2:</th>
+                <th>Média: </th>
+            </tr>
+            <tr>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="index2.js"></script>
+</body>
+</html>
